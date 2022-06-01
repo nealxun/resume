@@ -10,8 +10,8 @@ urlcolor: blue
 
 
 ### Objective
-- Create an English Resume.
-- Create a Chinese Resume (with picture).
+- Create an [English Resume](https://github.com/nealxun/Resume/blob/master/Neal_resume_EN/Neal_resume_EN.pdf).
+- Create a [Chinese Resume](https://github.com/nealxun/Resume/blob/master/Neal_resume_CN/Neal_resume_CN.pdf) (with picture).
 
 ### Notes
 - R vitae: https://github.com/mitchelloharawild/vitae
