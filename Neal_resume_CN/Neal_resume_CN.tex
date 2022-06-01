@@ -1,0 +1,195 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{profile.png}
+\name{余浔}{}
+
+\address{安徽省芜湖市}
+
+\mobile{+1 979-703-9128}
+\email{\href{mailto:nealxun@163.com}{\nolinkurl{nealxun@163.com}}}
+\github{nealxun}
+\linkedin{findnealyu}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{数据分析从业人员，对人工智能在传统行业的应用保持高度的敏感性和关注度，擅长机器学习，统计建模，能够处理并分析大量繁杂数据，发现其中商业价值并提供决策支持。}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{ctex}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {May, 2022}
+    {余浔~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{ux6559ux80b2ux80ccux666f}{%
+\section{教育背景}\label{ux6559ux80b2ux80ccux666f}}
+
+\begin{cventries}
+    \cventry{工业工程硕士学位}{美国德州农工大学}{College Station, 得克萨斯州}{2014 - 2016}{}\vspace{-4.0mm}
+    \cventry{工业与制造工程学士学位}{美国北达科他州立大学}{Fargo，北达科他州}{2010 - 2013}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{ux804cux4e1aux5c65ux5386}{%
+\section{职业履历}\label{ux804cux4e1aux5c65ux5386}}
+
+\begin{cventries}
+    \cventry{预测分析师}{苹果}{加利福利亚州Sunnyvale}{01/2020 - 至今}{\begin{cvitems}
+\item 负责整个欧洲市场的顾客需求分析工作，对超过24种语言和100多条专线提供及时准确的预测。
+\item 拓展单因子时间序列模型至多因子以应对新冠疫情对客户需求带来的影响，并提出预测之前先分类的概念，提升5\%的预测准确率。
+\item 通过将客服人员工作年限，工作级别等因素纳入预测模型，以及应用智能模型选择算法，显著提升了高阶客户需求的预测准确性大约4\%。
+\end{cvitems}}
+    \cventry{统计分析师}{特斯拉}{加利福利亚州Fremont}{09/2017 - 12/2019}{\begin{cvitems}
+\item 从零开始创建多个统计预测模型（ETS, ARIMA, Dynamic Regression等），对全球超过12,000 个汽车零部件的需求进行Global以及PDC层面的预测，准确率达80%。
+\item 使用SQL获取各PDC各个零部件的库存状况，并根据每月的库存转移数据，提出有效季度库存清算建议。
+\item 建立基于R Shiny的数据可视化面板，有效监控各个模型的预测准确率并给需求规划专员提供实时反馈。
+\item 基于汽车零部件平均替换周期及尺寸大小，预测3-5年内全球范围内的整体消耗量以帮助仓库规划产能。
+\item 创建整数规划模型，将零部件划分给不同需求规划专员以平衡工作量并分散风险。
+\end{cvitems}}
+    \cventry{商业智能分析员}{美国Spotlight能源公司}{得克萨斯州休斯敦}{08/2016 – 09/2017}{\begin{cvitems}
+\item 设计Python网络爬虫，从管道运输公司EBB中自动抓取有关天然气运输的关键信息，每年节约人力成本\$15K。
+\item 创建Excel数据模型，自动导入交易数据并计算公司每日的损益值，提升50\%的效率。
+\item 创建交易最优化模型，根据每日天然气价格的浮动以及对手方的交易策略，自动计算出各条运输路径的利润。
+\end{cvitems}}
+    \cventry{仓储精益专员}{京东}{上海}{05/2016 – 08/2016}{\begin{cvitems}
+\item 负责仓库各项运营环节的监控与改善工作，提出的飞鹰计划帮助公司节省10万余元。
+\item 参与对顾客在网上评论数据的分析与挖掘，进而改善仓储作业流程提升部分商品的客户满意度2\%。
+\end{cvitems}}
+\end{cventries}
+
+\newpage
+
+\hypertarget{ux9879ux76eeux7ecfux5386}{%
+\section{项目经历}\label{ux9879ux76eeux7ecfux5386}}
+
+\begin{cventries}
+    \cventry{美国德州农工大学，教育学院，智能教师模型设计}{}{}{03/2016 – 05/2016}{\begin{cvitems}
+\item 利用隐含马尔科夫模型预测小学低年级学生在客观题上答对每一题的概率，为智能教师的创立提供理论基础。
+\item 创建神经网络模型，根据学生答题产生的序列预测该陷入“高原区”的可能性，提高recall 50\%，precision 10\%。
+\end{cvitems}}
+    \cventry{美国德州农工大学，工业与系统工程学院，半导体行业次品预测模型设计}{}{}{05/2015 – 08/2015}{\begin{cvitems}
+\item 利用主成分分析法将原始数据的维度从590降至168，有效减少数据的噪音程度。
+\item 针对原始数据的不平衡情况，运用多次取样的方法将模型的预测精度提升了10\%。
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{ux804cux4e1aux8bc1ux4e66}{%
+\section{职业证书}\label{ux804cux4e1aux8bc1ux4e66}}
+
+\begin{cventries}
+    \cventry{}{}{}{}{\begin{cvitems}
+\item 工程：美国基础工程师从业资格证书，美国工业工程协会六西格玛绿带证书
+\item 计算机：能够熟练使用 SQL, R, Python, Tableau, Excel Power Query, Excel Power Pivot
+\item 其他：通过CFA一级考试，SAS 全球基础资格认证书，美国德州农工大学梅斯商学院商业管理证书
+\end{cvitems}}
+\end{cventries}
+
+
+
+\end{document}
