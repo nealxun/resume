@@ -19,22 +19,6 @@ library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Education
-
-```{r education}
-tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "Master of Science, Industrial Engineering", "Texas A&M University", "College Station, TX", "2014 - 2016", 
-    list("GPA: 3.91; Passed CFA Level I Exam; SAS Base Certificate; Business Management Certificate"
-         ),
-  
-  "Bachelor of Science, Industrial Engineering", "North Dakota State University", "Frago, ND", "2010 - 2013", 
-    list("GPA: 3.80; IIE Six Sigma Green Belt; Passed FE (Fundamentals Engineering) Exam"
-         )
-) %>% 
-  detailed_entries(degree, dates, uni, loc, details)
-```
-
 
 # PROFESSIONAL EXPERIENCE
 
@@ -64,6 +48,24 @@ tribble(
         ) %>% 
   detailed_entries(role, dates, company, loc, details)
 ```
+
+
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Master of Science, Industrial Engineering", "Texas A&M University", "College Station, TX", "2014 - 2016", 
+    list("GPA: 3.91; Passed CFA Level I Exam; SAS Base Certificate; Business Management Certificate"
+         ),
+  
+  "Bachelor of Science, Industrial Engineering", "North Dakota State University", "Frago, ND", "2010 - 2013", 
+    list("GPA: 3.80; IIE Six Sigma Green Belt; Passed FE (Fundamentals Engineering) Exam"
+         )
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
 
 # PROJECT
 
