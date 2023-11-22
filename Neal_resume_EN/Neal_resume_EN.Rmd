@@ -26,24 +26,23 @@ knitr::opts_chunk$set(echo = FALSE)
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Forecasting Analyst", "Apple, AppleCare", "Sunnyvale, CA", "01/2020 - Present", 
-    list("In charge of contact center demand forecasting in the EMEA market for 24 languages and more than 100 queues.",
+    list("In charge of contact center demand forecasting in the EMEA market for 24 languages and more than 100 queue types.",
          "Rebuilt baseline forecast model to take COVID impact into consideration via simulating the additional regressor (such as a shock variable) to model the impact of different waves of COVID. Also introduced the idea of classification before forecasting so that different language queues can be assigned to different customized models. Together achieved a 5\\% accuracy gain and 50\\% model running time reduction.", 
-         "Enhanced tier 2 queues prediction model via introducing a brand new adaptive smoothing model as well as a dynamic model selection procedure, resulting in a 4\\% accuracy improvement."
+         "Enhanced tier 2 queues prediction model via introducing a brand new adaptive smoothing model as well as a dynamic model selection procedure, resulting in a 4\\% accuracy improvement.",
+         "Led forecasting team snowflake transition via creating a quip document to monitor the entire transition progress, as well as actively worked with data engineering and IT team to resolve many technical issues.",
+         "Collaborated with the data science team to utilize natural language model to classify chat 'none' issues, which accounted for 14\\% of the overall contact volume. Resulted in better business visibility and advisor procedure improvement."
         ),
   
   "Statistician", "Tesla, Service Demand Planning", "Fremont, CA", "09/2017 - 12/2019", 
     list("Created and delivered baseline statistical forecasts for all service parts and accessories (12,000+ SKU) from scratch, applied multiple algorithms including ETS, ARIMA, and dynamic regression that achieved 80\\% overall forecast accuracy.", 
-         "Highly shaped optimization skills via designing an integer programming tool to assign various parts to different demand planning managers to achieve balance and diversify the risk."
+         "Highly shaped optimization skills via designing an integer programming tool to assign various parts to different demand planning managers to achieve balance and diversify the risk.",
+         "Successfully managed 5 interns to deliver applicable short-term projects, such as forecasting integration process improvement and parts mean time to fail analysis model."
          ),
   
   "Business Analyst", "Spotlight Energy", "Houston, TX", "08/2016 – 09/2017", 
-    list("Highly improved web scraping skills via developing a python web crawler to automatically retrieve pipeline EBB and trading data for daily report building.", 
+    list("Created a web natural gas volume auto nomination tool via Selenium, resulting in 18K yearly savings.",
+         "Highly improved web scraping skills via developing a python web crawler to aretrieve pipeline EBB and trading data for daily report building.", 
          "Invented a trading optimization model to automatically calculate the value of hundreds of natural gas shipping paths, based on spread, cut percentage, as well as existing capacity, resulting in more than 500K profit."
-         ),
-  
-    "Research Intern", "Texas A&M University, College of Education", "College Station, TX", "05/2016 – 08/2016", 
-    list("Successfully applied Hidden Markov Model in predicting the student's likelihood of mastering a certain skill based on his/her response sequence, providing a key component for a prototype of the adaptive online course.", 
-         "Innovated a neural network based model to detect whether the student is “wheel spinning” on a certain skill, increasing the recall rate by 10\\% and precision rate by 50\\%."
          )
         ) %>% 
   detailed_entries(role, dates, company, loc, details)
@@ -72,8 +71,9 @@ tribble(
 ```{r project}
 tribble(
   ~ title, ~ dates, ~ details,
-  "Paper Helicopter Design Competition", "03/2016 – 05/2016", 
-    list("Achieved 50\\% fly time increment in implementing advanced response surface and robust design method to identify the optimized value for each variable such as wing length, wing width, and body length."
+    "Adaptive Online Course", "05/2016 – 08/2016", 
+    list("Successfully applied Hidden Markov Model in predicting the student's likelihood of mastering a certain skill based on their response sequence, providing a key component for a prototype of the adaptive online course.",
+         "Innovated a neural network-based model to detect whether the student is “wheel spinning” on a specific skill, increasing the recall rate by 10% and precision rate by 50\\%"
          ),
     "Social Network Analysis within Movies ", "05/2015 – 08/2015", 
     list("Strongly improved programming skills via designing algorithms to find certain structures of movie social networks. The objective is to find if there is any relationship between movie graph structure and ratings."
