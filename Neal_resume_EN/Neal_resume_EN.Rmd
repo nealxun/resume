@@ -6,7 +6,6 @@ email: neal.yu07@gmail.com
 phone: +1 979-703-9128
 github: nealxun
 linkedin: findnealyu
-twitter: nealxun1
 headcolor: "414141"
 output: 
   vitae::awesomecv:
@@ -41,7 +40,7 @@ tribble(
   
   "Business Analyst", "Spotlight Energy", "Houston, TX", "08/2016 – 09/2017", 
     list("Created a web natural gas volume auto nomination tool via Selenium, resulting in 18K yearly savings.",
-         "Highly improved web scraping skills via developing a python web crawler to aretrieve pipeline EBB and trading data for daily report building.", 
+         "Highly improved web scraping skills via developing a python web crawler to retrieve pipeline website and trading data for daily report building.", 
          "Invented a trading optimization model to automatically calculate the value of hundreds of natural gas shipping paths, based on spread, cut percentage, as well as existing capacity, resulting in more than 500K profit."
          )
         ) %>% 
