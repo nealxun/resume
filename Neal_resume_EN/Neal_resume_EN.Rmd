@@ -29,7 +29,7 @@ tribble(
          "Rebuilt baseline forecast model to take COVID impact into consideration via simulating the additional regressor (such as a shock variable) to model the impact of different waves of COVID. Also introduced the idea of classification before forecasting so that different language queues can be assigned to different customized models. Together achieved a 5\\% accuracy gain and 50\\% model running time reduction.", 
          "Enhanced tier 2 queues prediction model via introducing a brand new adaptive smoothing model as well as a dynamic model selection procedure, resulting in a 4\\% accuracy improvement.",
          "Led forecasting team snowflake transition via creating a quip document to monitor the entire transition progress, as well as actively worked with data engineering and IT team to resolve many technical issues.",
-         "Collaborated with the data science team to utilize natural language model to classify chat 'none' issues, which accounted for 14\\% of the overall contact volume. Resulted in better business visibility and advisor procedure improvement."
+         "Collaborated with the data science team to utilize retrieval augmented classification for missing issue identification in AppleCare support cases. Achieved 87\\% accuracy and resulted in better business visibility as well as advisor procedure improvement."
         ),
   
   "Statistician", "Tesla, Service Demand Planning", "Fremont, CA", "09/2017 - 12/2019", 
