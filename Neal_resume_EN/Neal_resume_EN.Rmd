@@ -2,7 +2,7 @@
 name: Xun (Neal) Yu
 date: "`r format(Sys.time(), '%B, %Y')`"
 address: Fremont, CA
-email: neal.yu07@gmail.com
+email: nealxun@gmail.com
 phone: +1 979-703-9128
 github: nealxun
 linkedin: findnealyu
@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE)
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Forecasting Analyst", "Apple, AppleCare", "Sunnyvale, CA", "01/2020 - Present", 
-    list("In charge of contact center demand forecasting in the EMEA market for 24 languages and more than 100 queue types.",
+    list("In charge of contact center demand forecasting in the EMEIA market for 24 languages and more than 100 queue types.",
          "Rebuilt baseline forecast model to take COVID impact into consideration via simulating the additional regressor (such as a shock variable) to model the impact of different waves of COVID. Also introduced the idea of classification before forecasting so that different language queues can be assigned to different customized models. Together achieved a 5\\% accuracy gain and 50\\% model running time reduction.", 
          "Enhanced tier 2 queues prediction model via introducing a brand new adaptive smoothing model as well as a dynamic model selection procedure, resulting in a 4\\% accuracy improvement.",
          "Led forecasting team snowflake transition via creating a quip document to monitor the entire transition progress, as well as actively worked with data engineering and IT team to resolve many technical issues.",
@@ -72,7 +72,7 @@ tribble(
   ~ title, ~ dates, ~ details,
     "Adaptive Online Course", "05/2016 – 08/2016", 
     list("Successfully applied Hidden Markov Model in predicting the student's likelihood of mastering a certain skill based on their response sequence, providing a key component for a prototype of the adaptive online course.",
-         "Innovated a neural network-based model to detect whether the student is “wheel spinning” on a specific skill, increasing the recall rate by 10% and precision rate by 50\\%"
+         "Innovated a neural network-based model to detect whether the student is “wheel spinning” on a specific skill, increasing the recall rate by 10\\% and precision rate by 50\\%."
          ),
     "Social Network Analysis within Movies ", "05/2015 – 08/2015", 
     list("Strongly improved programming skills via designing algorithms to find certain structures of movie social networks. The objective is to find if there is any relationship between movie graph structure and ratings."
@@ -96,7 +96,7 @@ tribble(
 # oneline
 tribble(
     ~ category,
-    "Skills: R, Python, SQL, Tableau, SAS, VBA, Power BI, Advanced Excel",
+    "Skills: R, Python, SQL, Tableau, Advanced Excel, Snowflake, Claude Code",
     "Languages: Mandarin Chinese (native), English (with work proficiency)"
   ) %>%
         detailed_entries(what = category)
