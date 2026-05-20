@@ -24,7 +24,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r working}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Forecasting Analyst", "Apple, AppleCare", "Sunnyvale, CA", "01/2020 - Present", 
+  "Data Scientist", "Apple, AppleCare", "Sunnyvale, CA", "01/2020 - Present", 
     list("In charge of contact center demand forecasting in the EMEIA market for 24 languages and more than 100 queue types.",
          "Rebuilt baseline forecast model to take COVID impact into consideration via simulating the additional regressor (such as a shock variable) to model the impact of different waves of COVID. Also introduced the idea of classification before forecasting so that different language queues can be assigned to different customized models. Together achieved a 5\\% accuracy gain and 50\\% model running time reduction.", 
          "Enhanced tier 2 queues prediction model via introducing a brand new adaptive smoothing model as well as a dynamic model selection procedure, resulting in a 4\\% accuracy improvement.",
